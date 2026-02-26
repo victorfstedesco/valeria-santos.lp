@@ -53,6 +53,13 @@
             background-size: 80%;
             opacity: 0.03;
         }
+        /* FAQ Accordion */
+        .faq-answer {
+            transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+        .faq-icon {
+            transition: transform 0.3s ease-in-out;
+        }
     </style>
 </head>
 <body class="bg-white text-brand-navy antialiased selection:bg-brand-rose selection:text-white">
@@ -90,21 +97,21 @@
                 <h1 class="font-serif text-5xl lg:text-7xl text-brand-navy leading-[1.05] mb-8">
                     Um espaço de escuta onde sua história pode, <span class="text-brand-rose italic">enfim, ser dita.</span>
                 </h1>
-                <p class="text-lg text-gray-500 font-light mb-10 leading-relaxed max-w-md">
-                    Psicoterapia psicanalítica para adolescentes e adultos que desejam compreender seus conflitos emocionais com profundidade e responsabilidade.
+                <p class="text-lg text-gray-500 font-light mb-10 leading-relaxed max-w-md text-justify">
+                    Psicoterapia de orientação psicanalítica para adolescentes e adultos que desejam compreender seus conflitos emocionais com profundidade e responsabilidade. No botão Conhecer a psicóloga Valéria
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="https://wa.me/SEUNUMERO" class="bg-brand-navy text-white px-10 py-4 rounded-full text-center font-medium hover:bg-opacity-90 transition shadow-xl shadow-brand-navy/20 hover:scale-105 transform duration-300">
                         Agendar Atendimento
                     </a>
                     <a href="#sobre" class="px-10 py-4 rounded-full text-center font-medium text-brand-navy border border-gray-300 hover:bg-white transition">
-                        Conhecer a Valéria
+                        Conhecer a Psicóloga Valéria
                     </a>
                 </div>
             </div>
 
             <div class="relative h-[550px] lg:h-[650px] w-full rounded-[3rem] overflow-hidden shadow-soft group">
-                <img src="foto1.jpeg" alt="Dra. Valéria Sorrindo" class="absolute inset-0 w-full h-full object-cover transition duration-1000 group-hover:scale-105">
+                <img src="1.jpeg" alt="Dra. Valéria Sorrindo" class="absolute inset-0 w-full h-full object-cover transition duration-1000 group-hover:scale-105">
                 <div class="absolute bottom-10 left-10 bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-lg max-w-xs border border-white/50">
                     <p class="font-serif text-brand-navy text-lg italic">"Acolhimento que transforma."</p>
                 </div>
@@ -125,7 +132,7 @@
                         <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
                     </div>
                     <h3 class="text-2xl font-serif text-brand-navy mb-4">Atendimento Online</h3>
-                    <p class="text-gray-500 font-light leading-relaxed mb-8">
+                    <p class="text-gray-500 font-light leading-relaxed mb-8 text-justify">
                         Sessões realizadas por plataforma segura, possibilitando continuidade do processo com flexibilidade e conforto.
                     </p>
                     <ul class="space-y-3 mb-8">
@@ -139,7 +146,7 @@
                         <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                     </div>
                     <h3 class="text-2xl font-serif text-brand-navy mb-4">Atendimento Presencial</h3>
-                    <p class="text-gray-500 font-light leading-relaxed mb-8">
+                    <p class="text-gray-500 font-light leading-relaxed mb-8 text-justify">
                         Realizado em ambiente reservado, cuidadosamente estruturado para favorecer a escuta e a elaboração.
                     </p>
                     <ul class="space-y-3 mb-8">
@@ -157,7 +164,7 @@
                 
                 <div class="lg:col-span-5 relative">
                     <div class="relative h-[650px] rounded-[2.5rem] overflow-hidden shadow-2xl">
-                        <img src="foto4.jpeg" alt="Valéria no Consultório" class="absolute inset-0 w-full h-full object-cover object-top transition duration-700">
+                        <img src="2.jpeg" alt="Valéria no Consultório" class="absolute inset-0 w-full h-full object-cover object-top transition duration-700">
                     </div>
                     <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-brand-rose/20 rounded-full blur-2xl z-0"></div>
                 </div>
@@ -165,7 +172,7 @@
                 <div class="lg:col-span-7 lg:pl-12 z-10">
                     <h2 class="font-serif text-4xl lg:text-5xl text-brand-navy mb-8 leading-tight">Aqui, sua história <br><span class="text-brand-rose italic">encontra escuta.</span></h2>
                     
-                    <div class="space-y-5 text-gray-600 font-light text-lg leading-relaxed mb-10">
+                    <div class="space-y-5 text-gray-600 font-light text-lg leading-relaxed mb-10 text-justify">
                         <p>
                             Olá, sou a psicóloga Valéria dos Santos. Minha prática é fundamentada na psicanálise e orientada pela escuta atenta da singularidade de cada pessoa que me procura.
                         </p>
@@ -188,7 +195,7 @@
                     </div>
 
                     <a href="https://wa.me/SEUNUMERO" class="bg-brand-rose text-white px-8 py-3 rounded-full font-medium hover:bg-brand-rose-dark transition shadow-lg inline-block hover:-translate-y-1 transform">
-                        Falar com a Dra. Valéria
+                        Falar com a Psicóloga Valéria
                     </a>
                 </div>
             </div>
@@ -206,56 +213,56 @@
                 
                 <div class="p-8 bg-apple-gray rounded-3xl hover:bg-brand-rose hover:text-white transition duration-300 group">
                     <h3 class="text-xl font-serif text-brand-navy group-hover:text-white mb-4">Ansiedade</h3>
-                    <p class="text-gray-500 group-hover:text-white/90 text-sm leading-relaxed">
+                    <p class="text-gray-500 group-hover:text-white/90 text-sm leading-relaxed text-justify">
                         A ansiedade muitas vezes aparece como inquietação constante, pensamentos repetitivos, medo difuso ou sensação de estar sempre em alerta. Na escuta psicanalítica, buscamos compreender o que essa angústia comunica, quais conflitos a sustentam e quais repetições ela denuncia.
                     </p>
                 </div>
 
                 <div class="p-8 bg-apple-gray rounded-3xl hover:bg-brand-navy hover:text-white transition duration-300 group">
                     <h3 class="text-xl font-serif text-brand-navy group-hover:text-white mb-4">Depressão e desânimo</h3>
-                    <p class="text-gray-500 group-hover:text-white/90 text-sm leading-relaxed">
+                    <p class="text-gray-500 group-hover:text-white/90 text-sm leading-relaxed text-justify">
                         Mais do que tristeza, a depressão pode envolver esvaziamento, culpa, autocrítica intensa e perda de sentido. O trabalho terapêutico permite acessar as raízes desse sofrimento, elaborando experiências que permanecem não simbolizadas.
                     </p>
                 </div>
 
                 <div class="p-8 bg-apple-gray rounded-3xl hover:bg-brand-rose hover:text-white transition duration-300 group">
                     <h3 class="text-xl font-serif text-brand-navy group-hover:text-white mb-4">Vínculos afetivos</h3>
-                    <p class="text-gray-500 group-hover:text-white/90 text-sm leading-relaxed">
+                    <p class="text-gray-500 group-hover:text-white/90 text-sm leading-relaxed text-justify">
                         Dificuldades nos relacionamentos amorosos, familiares ou profissionais frequentemente revelam padrões inconscientes que se repetem. A análise possibilita compreender essas dinâmicas e construir formas mais conscientes de se vincular.
                     </p>
                 </div>
 
                 <div class="p-8 bg-apple-gray rounded-3xl hover:bg-brand-navy hover:text-white transition duration-300 group">
                     <h3 class="text-xl font-serif text-brand-navy group-hover:text-white mb-4">Padrões repetitivos</h3>
-                    <p class="text-gray-500 group-hover:text-white/90 text-sm leading-relaxed">
+                    <p class="text-gray-500 group-hover:text-white/90 text-sm leading-relaxed text-justify">
                         Quando situações semelhantes continuam se repetindo - nas escolhas, nos conflitos ou nas frustrações - pode haver conteúdos inconscientes atuando. O processo analítico favorece a identificação dessas repetições e a possibilidade de transformação.
                     </p>
                 </div>
 
                 <div class="p-8 bg-apple-gray rounded-3xl hover:bg-brand-navy hover:text-white transition duration-300 group">
                     <h3 class="text-xl font-serif text-brand-navy group-hover:text-white mb-4">Autoestima e identidade</h3>
-                    <p class="text-gray-500 group-hover:text-white/90 text-sm leading-relaxed">
+                    <p class="text-gray-500 group-hover:text-white/90 text-sm leading-relaxed text-justify">
                         Sentimentos de inadequação, dificuldade de se posicionar ou necessidade constante de validação externa podem estar ligados à forma como a identidade foi construída ao longo da história. A escuta clínica auxilia no fortalecimento do senso de si.
                     </p>
                 </div>
 
                 <div class="p-8 bg-apple-gray rounded-3xl hover:bg-brand-rose hover:text-white transition duration-300 group">
                     <h3 class="text-xl font-serif text-brand-navy group-hover:text-white mb-4">Conflitos na adolescência</h3>
-                    <p class="text-gray-500 group-hover:text-white/90 text-sm leading-relaxed">
+                    <p class="text-gray-500 group-hover:text-white/90 text-sm leading-relaxed text-justify">
                         A adolescência é um período de intensas transformações psíquicas. Conflitos familiares, inseguranças, crises de identidade e angústias podem emergir com força. O acompanhamento terapêutico oferece suporte nesse processo de transição.
                     </p>
                 </div>
 
                 <div class="p-8 bg-apple-gray rounded-3xl hover:bg-brand-navy hover:text-white transition duration-300 group">
                     <h3 class="text-xl font-serif text-brand-navy group-hover:text-white mb-4">Dificuldades de aprendizagem</h3>
-                    <p class="text-gray-500 group-hover:text-white/90 text-sm leading-relaxed">
+                    <p class="text-gray-500 group-hover:text-white/90 text-sm leading-relaxed text-justify">
                         Em alguns casos, a dificuldade não se limita ao aspecto cognitivo, mas envolve fatores emocionais, insegurança, ansiedade ou conflitos internos que interferem no desempenho escolar.
                     </p>
                 </div>
 
                 <div class="p-8 bg-apple-gray rounded-3xl hover:bg-brand-rose hover:text-white transition duration-300 group">
                     <h3 class="text-xl font-serif text-brand-navy group-hover:text-white mb-4">Terapia de casal</h3>
-                    <p class="text-gray-500 group-hover:text-white/90 text-sm leading-relaxed">
+                    <p class="text-gray-500 group-hover:text-white/90 text-sm leading-relaxed text-justify">
                         O vínculo conjugal é atravessado por histórias individuais, expectativas inconscientes e modos particulares de amar. O espaço terapêutico possibilita compreender essas dinâmicas e reconstruir formas de diálogo e convivência.
                     </p>
                 </div>
@@ -315,7 +322,7 @@
                 <div>
                     <span class="text-brand-rose font-bold text-xs tracking-widest uppercase mb-4 block">O Caminho</span>
                     <h2 class="font-serif text-4xl text-brand-navy mb-6">Como funciona o processo de psicoterapia</h2>
-                    <p class="text-gray-600 font-light text-lg mb-8 leading-relaxed">
+                    <p class="text-gray-600 font-light text-lg mb-8 leading-relaxed text-justify">
                         A psicoterapia é um percurso, feito de escuta, tempo e elaboração. Construído na singularidade de cada história.
                     </p>
                     <ul class="space-y-8 mb-10">
@@ -343,8 +350,13 @@
                     </ul>
                 </div>
 
-                <div class="relative h-[550px] w-full rounded-[3rem] overflow-hidden shadow-soft rotate-2 hover:rotate-0 transition duration-500">
-                    <img src="foto3.jpeg" alt="Sessão de Psicoterapia" class="absolute inset-0 w-full h-full object-cover">
+                <div class="space-y-6">
+                    <div class="relative h-[450px] w-full rounded-[3rem] overflow-hidden shadow-soft rotate-2 hover:rotate-0 transition duration-500">
+                        <img src="3.jpeg" alt="Sessão de Psicoterapia" class="absolute inset-0 w-full h-full object-cover">
+                    </div>
+                    <div class="relative h-[450px] w-full rounded-[3rem] overflow-hidden shadow-soft -rotate-2 hover:rotate-0 transition duration-500">
+                        <img src="4.jpeg" alt="Ambiente Terapêutico" class="absolute inset-0 w-full h-full object-cover object-center">
+                    </div>
                 </div>
             </div>
         </div>
@@ -482,6 +494,99 @@
         </div>
     </section>
 
+    <section id="duvidas" class="py-24 bg-apple-gray">
+        <div class="max-w-4xl mx-auto px-6 lg:px-12">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-3xl lg:text-4xl text-brand-navy mb-4">Dúvidas Frequentes</h2>
+                <p class="text-gray-500 font-light text-sm">Respostas para as perguntas mais comuns sobre o processo terapêutico.</p>
+            </div>
+            
+            <div class="space-y-4 text-left">
+                <div class="bg-white rounded-3xl p-8 faq-item cursor-pointer group hover:shadow-md transition-all duration-300 shadow-sm">
+                    <div class="flex justify-between items-center">
+                        <h4 class="font-serif text-lg text-brand-navy group-hover:text-brand-rose transition">Como funciona a primeira sessão?</h4>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-brand-rose faq-icon transition-transform"></i>
+                    </div>
+                    <div class="faq-answer max-h-0 overflow-hidden opacity-0">
+                        <p class="pt-4 text-gray-600 font-light leading-relaxed text-justify">A primeira sessão é um momento de acolhimento e escuta. Você poderá falar sobre o que está vivendo e o que o motivou a buscar terapia. Também explico como funciona o percurso terapêutico e tiramos todas as dúvidas iniciais.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl p-8 faq-item cursor-pointer group hover:shadow-md transition-all duration-300 shadow-sm">
+                    <div class="flex justify-between items-center">
+                        <h4 class="font-serif text-lg text-brand-navy group-hover:text-brand-rose transition">Qual a duração das sessões?</h4>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-brand-rose faq-icon transition-transform"></i>
+                    </div>
+                    <div class="faq-answer max-h-0 overflow-hidden opacity-0">
+                        <p class="pt-4 text-gray-600 font-light leading-relaxed text-justify">Cada sessão tem duração média 50 minutos.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl p-8 faq-item cursor-pointer group hover:shadow-md transition-all duration-300 shadow-sm">
+                    <div class="flex justify-between items-center">
+                        <h4 class="font-serif text-lg text-brand-navy group-hover:text-brand-rose transition">Qual a frequência do atendimento?</h4>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-brand-rose faq-icon transition-transform"></i>
+                    </div>
+                    <div class="faq-answer max-h-0 overflow-hidden opacity-0">
+                        <p class="pt-4 text-gray-600 font-light leading-relaxed text-justify">Os atendimentos são realizados, preferencialmente, uma vez por semana. A regularidade é fundamental para o andamento do processo terapêutico.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl p-8 faq-item cursor-pointer group hover:shadow-md transition-all duration-300 shadow-sm">
+                    <div class="flex justify-between items-center">
+                        <h4 class="font-serif text-lg text-brand-navy group-hover:text-brand-rose transition">Você atende por convênio?</h4>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-brand-rose faq-icon transition-transform"></i>
+                    </div>
+                    <div class="faq-answer max-h-0 overflow-hidden opacity-0">
+                        <p class="pt-4 text-gray-600 font-light leading-relaxed text-justify">Os atendimentos são particulares. Caso necessário, posso fornecer recibo para solicitação de reembolso junto ao convênio.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl p-8 faq-item cursor-pointer group hover:shadow-md transition-all duration-300 shadow-sm">
+                    <div class="flex justify-between items-center">
+                        <h4 class="font-serif text-lg text-brand-navy group-hover:text-brand-rose transition">Quais são as formas de pagamento?</h4>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-brand-rose faq-icon transition-transform"></i>
+                    </div>
+                    <div class="faq-answer max-h-0 overflow-hidden opacity-0">
+                        <p class="pt-4 text-gray-600 font-light leading-relaxed text-justify">O pagamento pode ser realizado por transferência bancária, pix, cartão de débito ou crédito.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl p-8 faq-item cursor-pointer group hover:shadow-md transition-all duration-300 shadow-sm">
+                    <div class="flex justify-between items-center">
+                        <h4 class="font-serif text-lg text-brand-navy group-hover:text-brand-rose transition">O atendimento é online ou presencial?</h4>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-brand-rose faq-icon transition-transform"></i>
+                    </div>
+                    <div class="faq-answer max-h-0 overflow-hidden opacity-0">
+                        <p class="pt-4 text-gray-600 font-light leading-relaxed text-justify">Os atendimentos podem ser realizados de forma online ou presencial, conforme a sua necessidade.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl p-8 faq-item cursor-pointer group hover:shadow-md transition-all duration-300 shadow-sm">
+                    <div class="flex justify-between items-center">
+                        <h4 class="font-serif text-lg text-brand-navy group-hover:text-brand-rose transition">A terapia é sigilosa?</h4>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-brand-rose faq-icon transition-transform"></i>
+                    </div>
+                    <div class="faq-answer max-h-0 overflow-hidden opacity-0">
+                        <p class="pt-4 text-gray-600 font-light leading-relaxed text-justify">Sim. Todo o conteúdo das sessões é protegido pelo sigilo profissional, garantindo um espaço seguro e confidencial.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl p-8 faq-item cursor-pointer group hover:shadow-md transition-all duration-300 shadow-sm">
+                    <div class="flex justify-between items-center">
+                        <h4 class="font-serif text-lg text-brand-navy group-hover:text-brand-rose transition">Em quanto tempo começo a perceber resultados?</h4>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-brand-rose faq-icon transition-transform"></i>
+                    </div>
+                    <div class="faq-answer max-h-0 overflow-hidden opacity-0">
+                        <p class="pt-4 text-gray-600 font-light leading-relaxed text-justify">Cada pessoa tem seu tempo e sua história. A psicoterapia é um processo gradual, que respeita o ritmo de cada paciente.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl p-8 faq-item cursor-pointer group hover:shadow-md transition-all duration-300 shadow-sm">
+                    <div class="flex justify-between items-center">
+                        <h4 class="font-serif text-lg text-brand-navy group-hover:text-brand-rose transition">E se eu não souber o que dizer na sessão?</h4>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-brand-rose faq-icon transition-transform"></i>
+                    </div>
+                    <div class="faq-answer max-h-0 overflow-hidden opacity-0">
+                        <p class="pt-4 text-gray-600 font-light leading-relaxed text-justify">Você não precisa chegar sabendo o que falar. A própria fala vai se construindo no encontro terapêutico, no seu tempo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="bg-brand-navy text-white overflow-hidden">
         <div class="grid lg:grid-cols-2">
             
@@ -526,6 +631,68 @@
             </div>
         </div>
     </footer>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+        // Inicializar ícones Lucide
+        lucide.createIcons();
+
+        // FAQ Accordion
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const answer = item.querySelector('.faq-answer');
+                const icon = item.querySelector('.faq-icon');
+                
+                // Adicionar evento de clique em todo o card
+                item.addEventListener('click', () => {
+                    const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
+                    
+                    // Fechar todos os outros itens
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            const otherAnswer = otherItem.querySelector('.faq-answer');
+                            const otherIcon = otherItem.querySelector('.faq-icon');
+                            otherAnswer.style.maxHeight = '0px';
+                            otherAnswer.style.opacity = '0';
+                            otherIcon.style.transform = 'rotate(0deg)';
+                        }
+                    });
+                    
+                    // Toggle do item atual
+                    if (isOpen) {
+                        answer.style.maxHeight = '0px';
+                        answer.style.opacity = '0';
+                        icon.style.transform = 'rotate(0deg)';
+                    } else {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        answer.style.opacity = '1';
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+        });
+
+        // Scroll suave para navegação
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href !== '') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
