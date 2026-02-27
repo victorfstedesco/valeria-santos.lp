@@ -111,7 +111,7 @@
             </div>
 
             <div class="relative h-[550px] lg:h-[650px] w-full rounded-[3rem] overflow-hidden shadow-soft group">
-                <img src="1.jpeg" alt="Dra. Valéria Sorrindo" class="absolute inset-0 w-full h-full object-cover transition duration-1000 group-hover:scale-105">
+                <img src="1.jpeg" alt="Dra. Valéria Sorrindo" class="absolute inset-0 w-full h-full object-cover object-top transition duration-1000 group-hover:scale-105">
                 <div class="absolute bottom-10 left-10 bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-lg max-w-xs border border-white/50">
                     <p class="font-serif text-brand-navy text-lg italic">"Acolhimento que transforma."</p>
                 </div>
@@ -164,7 +164,7 @@
                 
                 <div class="lg:col-span-5 relative">
                     <div class="relative h-[650px] rounded-[2.5rem] overflow-hidden shadow-2xl">
-                        <img src="2.jpeg" alt="Valéria no Consultório" class="absolute inset-0 w-full h-full object-cover object-top transition duration-700">
+                        <img src="2.jpeg" alt="Valéria no Consultório" class="absolute inset-0 scale-x-[-1] w-full h-full object-cover object-top transition duration-700">
                     </div>
                     <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-brand-rose/20 rounded-full blur-2xl z-0"></div>
                 </div>
@@ -352,7 +352,7 @@
 
                 <div class="space-y-6">
                     <div class="relative h-[450px] w-full rounded-[3rem] overflow-hidden shadow-soft rotate-2 hover:rotate-0 transition duration-500">
-                        <img src="3.jpeg" alt="Sessão de Psicoterapia" class="absolute inset-0 w-full h-full object-cover">
+                        <img src="3.jpeg" alt="Sessão de Psicoterapia" class="absolute scale-x-[-1] inset-0 w-full h-full object-cover">
                     </div>
                     <div class="relative h-[450px] w-full rounded-[3rem] overflow-hidden shadow-soft -rotate-2 hover:rotate-0 transition duration-500">
                         <img src="4.jpeg" alt="Ambiente Terapêutico" class="absolute inset-0 w-full h-full object-cover object-center">
@@ -362,7 +362,7 @@
         </div>
     </section>
 
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-white overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
             <div class="text-center mb-16">
                 <div class="flex justify-center items-center gap-1 mb-4 text-yellow-400">
@@ -376,122 +376,224 @@
                 <p class="text-gray-500 font-light text-sm">A opinião de quem confiou no processo.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                
-                <div class="bg-apple-gray rounded-3xl p-8 text-left shadow-sm flex flex-col h-full hover:shadow-md transition">
-                    <div class="flex gap-1 text-yellow-400 mb-4">
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+            <!-- Carrossel -->
+            <div class="relative">
+                <!-- Track -->
+                <div id="reviews-track" class="overflow-hidden">
+                    <div id="reviews-inner" class="flex transition-transform duration-500 ease-in-out gap-6">
+
+                        <!-- Card 1 -->
+                        <div class="bg-apple-gray rounded-3xl p-8 text-left shadow-sm flex flex-col flex-shrink-0 w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]">
+                            <div class="flex gap-1 text-yellow-400 mb-4">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            </div>
+                            <p class="text-gray-600 font-light text-sm leading-relaxed mb-6 flex-grow">
+                                "Uma profissional dedicada e atenciosa, que consegue criar um espaço acolhedor e sem julgamentos. Sua capacidade de adaptação às necessidades que cada um tem faz com que todos se sintam confortável para avançar no processo terapêutico. Recomendo muito!"
+                            </p>
+                            <p class="font-serif text-brand-navy font-medium mt-auto">- M. R.</p>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="bg-apple-gray rounded-3xl p-8 text-left shadow-sm flex flex-col flex-shrink-0 w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]">
+                            <div class="flex gap-1 text-yellow-400 mb-4">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            </div>
+                            <p class="text-gray-600 font-light text-sm leading-relaxed mb-6 flex-grow">
+                                "Só tenho que agradecer a atenção, carinho e dedicação da Valéria dos Santos durante o tratamento do meu filho. A comunicação conosco também foi excelente 👏🏽👍🏽🙏🏽🙏🏽"
+                            </p>
+                            <p class="font-serif text-brand-navy font-medium mt-auto">- M. A.</p>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="bg-apple-gray rounded-3xl p-8 text-left shadow-sm flex flex-col flex-shrink-0 w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]">
+                            <div class="flex gap-1 text-yellow-400 mb-4">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            </div>
+                            <p class="text-gray-600 font-light text-sm leading-relaxed mb-6 flex-grow">
+                                "Profissional excelente, atenciosa e muito ética. Demonstra sensibilidade e escuta genuína, sempre com muito respeito e cuidado. Recomendo de olhos fechados!!"
+                            </p>
+                            <p class="font-serif text-brand-navy font-medium mt-auto">- M. E. C.</p>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="bg-apple-gray rounded-3xl p-8 text-left shadow-sm flex flex-col flex-shrink-0 w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]">
+                            <div class="flex gap-1 text-yellow-400 mb-4">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            </div>
+                            <p class="text-gray-600 font-light text-sm leading-relaxed mb-6 flex-grow">
+                                "Ótima profissional, com uma escuta atenta e empática com todo conhecimento e cuidado transmite confiança."
+                            </p>
+                            <p class="font-serif text-brand-navy font-medium mt-auto">- E. C.</p>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="bg-apple-gray rounded-3xl p-8 text-left shadow-sm flex flex-col flex-shrink-0 w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]">
+                            <div class="flex gap-1 text-yellow-400 mb-4">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            </div>
+                            <p class="text-gray-600 font-light text-sm leading-relaxed mb-6 flex-grow">
+                                "Profissional capacitada, excelente, atende os pacientes com muito respeito e amor .."
+                            </p>
+                            <p class="font-serif text-brand-navy font-medium mt-auto">- D. X.</p>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div class="bg-apple-gray rounded-3xl p-8 text-left shadow-sm flex flex-col flex-shrink-0 w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]">
+                            <div class="flex gap-1 text-yellow-400 mb-4">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            </div>
+                            <p class="text-gray-600 font-light text-sm leading-relaxed mb-6 flex-grow">
+                                "Ótima profissional! Calma e atenciosa, atende com respeito seus pacientes. Conduta condizente com a linha e especialização informadas. Sou grata pela sua atuação e dedicação!"
+                            </p>
+                            <p class="font-serif text-brand-navy font-medium mt-auto">- A.</p>
+                        </div>
+
+                        <!-- Card 7 -->
+                        <div class="bg-apple-gray rounded-3xl p-8 text-left shadow-sm flex flex-col flex-shrink-0 w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]">
+                            <div class="flex gap-1 text-yellow-400 mb-4">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            </div>
+                            <p class="text-gray-600 font-light text-sm leading-relaxed mb-6 flex-grow">
+                                "Uma excelente profissional. Super indico."
+                            </p>
+                            <p class="font-serif text-brand-navy font-medium mt-auto">- T. L.</p>
+                        </div>
+
+                        <!-- Card 8 -->
+                        <div class="bg-apple-gray rounded-3xl p-8 text-left shadow-sm flex flex-col flex-shrink-0 w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]">
+                            <div class="flex gap-1 text-yellow-400 mb-4">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            </div>
+                            <p class="text-gray-600 font-light text-sm leading-relaxed mb-6 flex-grow">
+                                "Ótima psicóloga, um acompanhamento muito humano. É uma excelente profissional"
+                            </p>
+                            <p class="font-serif text-brand-navy font-medium mt-auto">- S. S.</p>
+                        </div>
+
                     </div>
-                    <p class="text-gray-600 font-light text-sm leading-relaxed mb-6 flex-grow">
-                        "Uma profissional dedicada e atenciosa, que consegue criar um espaço acolhedor e sem julgamentos. Sua capacidade de adaptação às necessidades que cada um tem faz com que todos se sintam confortável para avançar no processo terapêutico. Recomendo muito!"
-                    </p>
-                    <p class="font-serif text-brand-navy font-medium mt-auto">- M. R.</p>
                 </div>
 
-                <div class="bg-apple-gray rounded-3xl p-8 text-left shadow-sm flex flex-col h-full hover:shadow-md transition">
-                    <div class="flex gap-1 text-yellow-400 mb-4">
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                    </div>
-                    <p class="text-gray-600 font-light text-sm leading-relaxed mb-6 flex-grow">
-                        "Só tenho que agradecer a atenção, carinho e dedicação da Valéria dos Santos durante o tratamento do meu filho. A comunicação conosco também foi excelente 👏🏽👍🏽🙏🏽🙏🏽"
-                    </p>
-                    <p class="font-serif text-brand-navy font-medium mt-auto">- M. A.</p>
-                </div>
-
-                <div class="bg-apple-gray rounded-3xl p-8 text-left shadow-sm flex flex-col h-full hover:shadow-md transition">
-                    <div class="flex gap-1 text-yellow-400 mb-4">
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                    </div>
-                    <p class="text-gray-600 font-light text-sm leading-relaxed mb-6 flex-grow">
-                        "Profissional excelente, atenciosa e muito ética. Demonstra sensibilidade e escuta genuína, sempre com muito respeito e cuidado. Recomendo de olhos fechados!!"
-                    </p>
-                    <p class="font-serif text-brand-navy font-medium mt-auto">- M. E. C.</p>
-                </div>
-
-                <div class="bg-apple-gray rounded-3xl p-8 text-left shadow-sm flex flex-col h-full hover:shadow-md transition">
-                    <div class="flex gap-1 text-yellow-400 mb-4">
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                    </div>
-                    <p class="text-gray-600 font-light text-sm leading-relaxed mb-6 flex-grow">
-                        "Ótima profissional, com uma escuta atenta e empática com todo conhecimento e cuidado transmite confiança."
-                    </p>
-                    <p class="font-serif text-brand-navy font-medium mt-auto">- E. C.</p>
-                </div>
-
-                <div class="bg-apple-gray rounded-3xl p-8 text-left shadow-sm flex flex-col h-full hover:shadow-md transition">
-                    <div class="flex gap-1 text-yellow-400 mb-4">
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                    </div>
-                    <p class="text-gray-600 font-light text-sm leading-relaxed mb-6 flex-grow">
-                        "Profissional capacitada, excelente, atende os pacientes com muito respeito e amor .."
-                    </p>
-                    <p class="font-serif text-brand-navy font-medium mt-auto">- D. X.</p>
-                </div>
-
-                <div class="bg-apple-gray rounded-3xl p-8 text-left shadow-sm flex flex-col h-full hover:shadow-md transition">
-                    <div class="flex gap-1 text-yellow-400 mb-4">
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                    </div>
-                    <p class="text-gray-600 font-light text-sm leading-relaxed mb-6 flex-grow">
-                        "Ótima profissional! Calma e atenciosa, atende com respeito seus pacientes. Conduta condizente com a linha e especialização informadas. Sou grata pela sua atuação e dedicação!"
-                    </p>
-                    <p class="font-serif text-brand-navy font-medium mt-auto">- A.</p>
-                </div>
-
-                <div class="bg-apple-gray rounded-3xl p-8 text-left shadow-sm flex flex-col h-full hover:shadow-md transition">
-                    <div class="flex gap-1 text-yellow-400 mb-4">
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                    </div>
-                    <p class="text-gray-600 font-light text-sm leading-relaxed mb-6 flex-grow">
-                        "Uma excelente profissional. Super indico."
-                    </p>
-                    <p class="font-serif text-brand-navy font-medium mt-auto">- T. L.</p>
-                </div>
-
-                <div class="bg-apple-gray rounded-3xl p-8 text-left shadow-sm flex flex-col h-full hover:shadow-md transition">
-                    <div class="flex gap-1 text-yellow-400 mb-4">
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
-                    </div>
-                    <p class="text-gray-600 font-light text-sm leading-relaxed mb-6 flex-grow">
-                        "Ótima psicóloga, um acompanhamento muito humano. É uma excelente profissional"
-                    </p>
-                    <p class="font-serif text-brand-navy font-medium mt-auto">- S. S.</p>
-                </div>
-
+                <!-- Botões de navegação -->
+                <button id="reviews-prev" onclick="reviewsCarousel(-1)" class="absolute -left-5 top-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center text-brand-navy hover:bg-brand-rose hover:text-white transition z-10 border border-gray-100">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+                </button>
+                <button id="reviews-next" onclick="reviewsCarousel(1)" class="absolute -right-5 top-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center text-brand-navy hover:bg-brand-rose hover:text-white transition z-10 border border-gray-100">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </button>
             </div>
+
+            <!-- Indicadores -->
+            <div id="reviews-dots" class="flex justify-center gap-2 mt-8"></div>
         </div>
+
+        <script>
+            (function() {
+                const total = 8;
+                let current = 0;
+                let perView = 3;
+
+                function getPerView() {
+                    if (window.innerWidth < 768) return 1;
+                    if (window.innerWidth < 1024) return 2;
+                    return 3;
+                }
+
+                function getCardWidth() {
+                    const track = document.getElementById('reviews-track');
+                    const inner = document.getElementById('reviews-inner');
+                    const gap = 24;
+                    const pv = getPerView();
+                    const trackW = track.offsetWidth;
+                    return (trackW - gap * (pv - 1)) / pv;
+                }
+
+                function maxIndex() {
+                    return Math.max(0, total - getPerView());
+                }
+
+                function buildDots() {
+                    const dotsEl = document.getElementById('reviews-dots');
+                    dotsEl.innerHTML = '';
+                    const steps = maxIndex() + 1;
+                    for (let i = 0; i < steps; i++) {
+                        const dot = document.createElement('button');
+                        dot.className = 'w-2 h-2 rounded-full transition-all duration-300 ' + (i === current ? 'bg-brand-rose w-6' : 'bg-gray-300');
+                        dot.addEventListener('click', () => goTo(i));
+                        dotsEl.appendChild(dot);
+                    }
+                }
+
+                function updateDots() {
+                    const dots = document.querySelectorAll('#reviews-dots button');
+                    dots.forEach((d, i) => {
+                        d.className = 'w-2 h-2 rounded-full transition-all duration-300 ' + (i === current ? 'bg-brand-rose w-6' : 'bg-gray-300');
+                    });
+                }
+
+                function goTo(index) {
+                    perView = getPerView();
+                    current = Math.max(0, Math.min(index, maxIndex()));
+                    const cardW = getCardWidth();
+                    const gap = 24;
+                    const offset = current * (cardW + gap);
+                    document.getElementById('reviews-inner').style.transform = 'translateX(-' + offset + 'px)';
+                    updateDots();
+                }
+
+                window.reviewsCarousel = function(dir) {
+                    goTo(current + dir);
+                };
+
+                function init() {
+                    perView = getPerView();
+                    buildDots();
+                    goTo(0);
+                }
+
+                window.addEventListener('resize', () => {
+                    buildDots();
+                    goTo(Math.min(current, maxIndex()));
+                });
+
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', init);
+                } else {
+                    init();
+                }
+            })();
+        </script>
     </section>
 
     <section id="duvidas" class="py-24 bg-apple-gray">
@@ -587,8 +689,9 @@
         </div>
     </section>
 
-    <footer class="bg-brand-navy text-white overflow-hidden">
-        <div class="grid lg:grid-cols-2">
+    <footer class="bg-brand-navy text-white overflow-hidden relative">
+        <div class="absolute inset-0 bg-[url('bg2.svg')] bg-repeat opacity-[0.06] pointer-events-none z-0"></div>
+        <div class="grid lg:grid-cols-2 relative z-10">
             
             <div class="relative h-[400px] lg:h-auto min-h-[500px]">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.368735391264!2d-51.93655162464731!3d-23.44714655740445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd6e9f6063be5%3A0xc3fdeea0ba56fb8e!2sAv.%20Pedro%20Taques%2C%202128%20-%20Jardim%20Alvorada%2C%20Maring%C3%A1%20-%20PR%2C%2087033-000!5e0!3m2!1spt-BR!2sbr!4v1708616183609!5m2!1spt-BR!2sbr" class="absolute inset-0 w-full h-full border-0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
